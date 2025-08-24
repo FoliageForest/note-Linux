@@ -759,7 +759,9 @@ w - Show who is logged on and what they are doing.
 
 来源: SCCC-职教云
 
-查看当前和过去登陆系统用户的相关信息
+查看当前和过去登陆系统用户的相关信息。
+
+可以借助该命令查看 VPS 的 SSH 登录日志对应 IP。
 
 ### useradd
 
