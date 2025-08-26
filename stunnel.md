@@ -74,7 +74,7 @@ stunnel4 stunnel.conf
 
 我自己配置服务端时遇到了问题，经过排错发现是证书与私钥不匹配导致的，这里给出验证证书与私钥是否匹配的方案:
 
-```
+```shell
 # 查看证书的 modulus
 openssl x509 -noout -modulus -in mydomain.cer | openssl md5
 
