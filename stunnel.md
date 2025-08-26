@@ -29,6 +29,8 @@ my.domain.name.cer
 my.domain.name.key
 ```
 
+写入证书文件: `cat my.domain.name.cer ca.cer my.domain.name.key > /etc/stunnel/stunnel.pem`
+
 服务器端配置: `/etc/stunnel/stunnel.conf`
 
 ```
@@ -67,6 +69,8 @@ stunnel4 stunnel.conf
 ```
 
 使用 `ps -aux | grep stunnel` 验证 stunnel 是否运行成功。
+
+客户端使用 `ssh -p 9999 root@127.0.0.1` 连接服务器。
 
 我自己配置服务端时遇到了问题，经过排错发现是证书与私钥不匹配导致的，这里给出验证证书与私钥是否匹配的方案:
 
