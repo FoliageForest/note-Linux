@@ -600,6 +600,7 @@ cpu属性值说明:
 ### uname
 
 `uname -a`  
+`uname -m`  
 
 ## 网络设备与网络连接
 
