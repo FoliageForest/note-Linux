@@ -7,14 +7,14 @@
 错误的注释:
 
 ```
-connect = my.domain:10086   # 连接到服务端 stunnel 的 TLS 端口
+connect = my.domain.com:10086   # 连接到服务端 stunnel 的 TLS 端口
 ```
 
 正确的注释:
 
 ```
 # 连接到服务端 stunnel 的 TLS 端口
-connect = my.domain:10086
+connect = my.domain.com:10086
 ```
 
 ### 使用 stunnel 代理 SSH 连接
@@ -25,11 +25,11 @@ connect = my.domain:10086
 
 ```
 ca.cer
-my.domain.name.cer
-my.domain.name.key
+my.domain.com.cer
+my.domain.com.key
 ```
 
-写入证书文件: `cat my.domain.name.cer ca.cer my.domain.name.key > /etc/stunnel/stunnel.pem`
+写入证书文件: `cat my.domain.com.cer ca.cer my.domain.com.key > /etc/stunnel/stunnel.pem`
 
 服务器端配置: `/etc/stunnel/stunnel.conf`
 
