@@ -1022,6 +1022,8 @@ blkid /dev/nvme0n1p1
 
 使用 `df -h` 可以查看是否挂载成功  
 
+`sudo mount /dev/sda1 /mnt/ollama-temp/ -o uid=64055` : `-o` 选项，指定 uid 为 64055。
+
 ### umount
 
 来源: `how umount`  
