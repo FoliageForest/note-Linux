@@ -1022,7 +1022,9 @@ blkid /dev/nvme0n1p1
 
 使用 `df -h` 可以查看是否挂载成功  
 
-`sudo mount /dev/sda1 /mnt/ollama-temp/ -o uid=64055,gid=993` : `-o` 选项，指定 uid 为 64055，指定 gid 为 993。
+`sudo mount -t exfat -o uid=64055,gid=993,umask=007 /dev/sda1 /mnt/ollama-temp/` : `-o` 选项，指定 uid 为 64055，指定 gid 为 993。
+
+注意：Linux 发行版可能自动挂载外接硬盘，导致 uid 和 gid 的设置不生效，解决方案是手动取消 Linux 发行版的自动挂载，再自己手动挂载。
 
 ### umount
 
