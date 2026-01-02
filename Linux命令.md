@@ -509,6 +509,7 @@ chkconfig firewalld
 
 -x, --proxy [protocol://]host[:port] Use this proxy
 -L, --location      Follow redirects
+-o, --output <file>        Write to file instead of stdout
 
 ## alias
 
